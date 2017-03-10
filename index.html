@@ -2,31 +2,58 @@
 <html>
 <head>
 <title>creative-tim</title>
-<script src="/assets/js/bootstrap.js"></script>
-<link href="/assets/css/bootstrap.css">
-</head>
-<body>
-<div class="container">
+<script sc="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script src="assets/js/bootstrap.js"></script>
+<link href="assets/css/bootstrap.css" rel="stylesheet">
+<nav class="navbar navbar-default navbar-fixed-top">
+<div class="container-fluid">
 	<div class="navbar-header">
-	
-		<a target="_blank" href="#" class="navbar-brand"> Creative Tim </a>
+	 <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#mynavigationbar" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+	<a class="navbar-brand" target="blank" href="#" > d well </a>
 	</div>
-	<div class="collapes navbar-collapes">
-		<ul class="nav navbar-nav navbar-right navbar-uppercase">
-			<a href="#">About</a>
-			<a href="#">What We Do </a>
-			<a href="#">Famous Freebies</a>
-			<a href="#">Testimonials</a>
+	<div class="collapes navbar-collapes" id="mynavigationbar">
+		<ul class="nav navbar-nav navbar-right">
+			<li><a href="#">About</a></li>
+			<li><a href="#">What We Do </a> </li>
+			<li><a href="#">Team</a></li>
+			<li><a href="#">Number</a></li>
 		</ul>
 	</div>
-	<div class="wrapper">
-		<div class="section section-header">
-		<div class="parallax pattern-image">
-			<img src="assets/image/2.jpg"/>
-		</div>
-		</div>
-	</div>
 </div>
+</nav>
+<style>
+	#home-background{
+	width:100%;
+	}
+	.navbar{
+	margin:0px;
+	background-color:transparent;
+	border:none;
+	}
+	#mynavigationbar a {
+	color:white;
+	}
+	.navbar-default a.navbar-brand{
+	color:blue;
+	}
+</style>
+</head>
+<body>
+	<nav class="navbar navbar-default">
+		<section id="home">
+		<img id="home-background" src="assets/image/2.jpg">
+		</section>
+		<section id="About"></section>
+		<section id="What We Do"</section>
+		<section id="Team"</section>
+		<section id="Number"</section>
+	</nav>
+
 
 </body>
 </html>
