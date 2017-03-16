@@ -2,7 +2,7 @@
 <html>
 <head>
 <title>dwell</title>
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	
 	<link href="assets/css/bootstrap.css" rel="stylesheet">
 	<link href="assets/css/font-awesome.css" rel="stylesheet">
 	
@@ -11,6 +11,7 @@
 	<div class="navbar-header">
 		<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#mynavigationbar" aria-expanded="false">
 			<span class="sr-only">Toggle navigation</span>
+			<span class="icon-bar"></span>
 			<span class="icon-bar"></span>
 			<span class="icon-bar"></span>
 			<span class="icon-bar"></span>
@@ -24,6 +25,7 @@
 			<li><a href="#What We Luarn">What We Luarn </a> </li>
 			<li><a href="#Tools">Tools</a></li>
 			<li><a href="#Team">Team</a></li>
+			<li><a href="#Number">Number</a></li>
 			<li><a href="#Contact Us">Contact Us</a></li>
 		</ul>
 		
@@ -71,7 +73,7 @@
 	.navbar{
 	margin:0px;
 	border:5;
-	font-size:25px;
+	font-size:20px;
 	font-weight:bold;
 	}
 	
@@ -169,39 +171,51 @@
 	.my-rounded-button{
     border-radius:20px;
     }
-	 footer
-        {
-          background:rgba(30, 30, 30, 0.97);
-          margin-top:30px;
-          padding:20px;
-        }
+	 footer{
+    background:rgba(30, 30, 30, 0.97);
+    margin-top:30px;
+    padding:20px;
+    }
 
-        .footer-links li , .footer-icons li
-        {
-          display: inline-block;
+    .footer-links li , .footer-icons li{
+    display: inline-block;
+	}
 
-        }
+    .footer-links li a , .footer-icons li a{
+    color: blue;
+    font-size: 20px;
+    padding: 10px;
+    }
 
-        .footer-links li a , .footer-icons li a
-        {
-          color: blue;
-          font-size: 20px;
-          padding: 10px;
-        }
+    .footer-links li a:hover , .footer-icons li a:hover{
+    text-decoration:none;
+    }
 
-        .footer-links li a:hover , .footer-icons li a:hover
-        {
-          text-decoration:none;
-        }
+    footer .footer-center-content{
+    color:#777777;
+    }
 
-        footer .footer-center-content
-        {
-          color:#777777;
-        }
+    .white-content{
+    color:white;
+    }
+		
+	@media (max-width:500px){
+        #home h1{
+            font-size:50px;
+          }
 
-        .white-content
-        {
-          color:white;
+          #home h2{
+            font-size:20px;
+          }
+
+          .contact-description{
+            margin-bottom:20px;
+          }
+
+          nav.navbar-default #mynavigationbar .navbar-creative-tim{
+            margin-left:-15px;
+          }
+
         }
 	
 </style>
@@ -336,7 +350,7 @@
         <div class="container">
           <div class="row">
             <div class="common-section-area">
-              <h1 class="text-center section-heading">Team</h1>
+              <h1 class="text-center section-heading"> My Team</h1>
               <hr>
             </div>
 
@@ -381,6 +395,31 @@
         </div>
       </section>
 	  
+	  <section id="Number">
+		<div class="container">
+			<div class="row">
+				<h1 class="text-center"> NUMBERS DON'T LIE </h1>
+				<hr> 
+			</div>
+		<div class="row">
+			<div class="col-md-4">
+			<h2>Users</h2>
+			<p>Businesses and Professionals</p>
+			
+			</div>
+			<div class="col-md-4">
+			<h2>Download</h2>
+			<p>Freebies, Templates & UI Kits</p>
+			
+			</div>
+			<div class="col-md-4">
+			<h2>Countries</h2>
+			<p>Where we made sponsorships</p>
+			
+			</div>
+		</div>
+		</div>
+		</section>
 		<section id="Contact Us">
 		<div class="container">
 			<div class="row">
@@ -458,7 +497,7 @@
       <script async defer
       src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAPj_0bUjNC-TxCe4yG7NoZp2mm6Z3eD2c&callback=initMap">
       </script>
-
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 <script src="assets/js/bootstrap.js"></script>
 </body>
 </html>
