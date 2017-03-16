@@ -3,7 +3,6 @@
 <head>
 <title>dwell</title>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-	<script src="assets/js/bootstrap.js"></script>
 	<link href="assets/css/bootstrap.css" rel="stylesheet">
 <nav class="navbar navbar-default navbar-fixed-top">
 <div class="container-fluid">
@@ -15,16 +14,23 @@
 			<span class="icon-bar"></span>
 			<span class="icon-bar"></span>
 		</button>
-		<a class="navbar-brand" target="blank" href="#" > d well </a>
+		<a class="navbar-brand"  href="#" > d well </a>
 	</div>
 	<div class="collapes navbar-collapes" id="mynavigationbar">
-		<ul class="nav navbar-nav navbar-right">
+		<ul class="nav navbar-nav navbar-left">
 			<li><a href="#About">About</a></li>
 			<li><a href="#What We Luarn">What We Luarn </a> </li>
 			<li><a href="#Tools">Tools</a></li>
 			<li><a href="#Team">Team</a></li>
 			<li><a href="#Contact Us">Contact Us</a></li>
 		</ul>
+		
+		<ul class="nav navbar-nav navbar-right">
+              <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+              <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+              <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+              <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+        </ul>
 	</div>
 </div>
 </nav>
@@ -102,8 +108,8 @@
 	text-align:center;
 	font-size:45px;
 	padding:10px 15px 15px 15px;
-	
 	}
+	
 	.navbar p{
 	text-align:center;
 	font-size:20px;
@@ -113,10 +119,32 @@
 	font-size:80px;
 	}
 	
+	#Tools img:hover{
+    opacity:0.6;
+    }
+	
+	.Team-img{
+    width: 120px;
+    margin: 0 auto;
+    border: 2px solid #c5a47e;
+    }
+		
+	.Team-social-links a {
+    font-size: 20px;
+    color: #bbbbbb;
+    margin-right: 10px;
+	}
+	
+	#map{
+	height:400px;
+	wedth:100%;
+	}
+	
+	
 </style>
 </head>
 <body>
-	<nav class="navbar navbar-default">
+<nav class="navbar navbar-default">
 		<section id="home">
 		<img id="home-background" src="assets/image/3.jpg">
 		<div class="container">
@@ -131,6 +159,7 @@
 			</div>
 		</div>
 		</section>
+		
 		<section id="About">
 		<div class="container">
 			<div class="row">
@@ -152,6 +181,7 @@
 		</div>
 		</div>
 		</section>
+		
 		<section id="What We Luarn">
 		<div class="container">
 			<div class="row">
@@ -184,6 +214,7 @@
 			</div>
 			</div>	
 		</div>
+		</section>
 		
 		 <section id="Tools">
         <div class="container">
@@ -237,24 +268,99 @@
 
 
         </div>
-      </section>
 		</section>
 		<section id="Team">
-		<div class="container">
-			<div class="row">
-				<h1 class="text-center"> Team</h1>
-				<hr> 
-			</div>
-		</div>
-		</section>
+        <div class="container">
+          <div class="row">
+            <div class="common-section-area">
+              <h1 class="text-center section-heading">Team</h1>
+              <hr>
+            </div>
+
+            <div class="container">
+              <div class="row">
+                <div class="col-md-4">
+                  <img src="assets/image/sandeep.jpg" class="img-responsive img-circle team-img">
+                  <h2 class="text-center team-heading"><u>Sandeep</u></h2>
+				   <p class="text-center team-about">Diploma in information Technology</p>
+                  <hr width="80%" class="team-horizontal-line">
+                  <div class="team-social-links text-center">
+                    <a href="#" target="_blank"> <i class="fa fa-twitter"></i> </a>
+                    <a href="#" target="_blank"><i class="fa fa-linkedin"></i> </a>
+                    <a href="#" target="_blank"><i class="fa fa-facebook-square"></i> </a>
+                  </div>
+                </div>
+
+                <div class="col-md-4">
+                  <img src="assets/image/me.jpg" class="img-responsive img-circle team-img">
+                  <h2 class="text-center team-heading"><u>Dharam Dev</u></h2>
+                  <p class="text-center team-about">Diploma in Computer Science</p>
+                  <hr width="80%" class="team-horizontal-line">
+                  <div class="team-social-links text-center">
+                    <a href="#" target="_blank"> <i class="fa fa-twitter"></i> </a>
+                    <a href="#" target="_blank"><i class="fa fa-linkedin"></i> </a>
+                  </div>
+                </div>
+
+                <div class="col-md-4">
+                  <img src="assets/image/vicky.jpg" class="img-responsive img-circle team-img">
+                  <h2 class="text-center team-heading"><u>Vicky</u></h2>
+                  <p class="text-center team-about">Diploma in Computer Science</p>
+                  <hr width="80%" class="team-horizontal-line">
+                  <div class="team-social-links text-center">
+                    <a href="#" target="_blank"> <i class="fa fa-twitter"></i> </a>
+                    <a href="#" target="_blank"><i class="fa fa-linkedin"></i> </a>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+	  
 		<section id="Contact Us">
 		<div class="container">
 			<div class="row">
 				<h1 class="text-center"> Contact Us</h1>
 				<hr> 
 			</div>
+			<div class="row">
+            <div class="col-md-4">
+              <div class="contact-description">
+                <h3 class="text-center">Where to meet ?</h3>
+                <h4 class="text-center">N-81, Barakhamba Road, Block N, Cannaught Place, Block N, Connaught Place, New Delhi, Delhi 110001</h4>
+                <br>
+                <h3 class="text-center">Want to say hello ?</h3>
+                <div class="text-center">
+                  <a href="#" class="btn btn-primary">Contact me</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-8">
+              <div id="map">
+              </div>
+            </div>
+          </div>
 		</div>
 		</section>
 	</nav>
+	  <script>
+        function initMap() {
+          var uluru = {lat: 28.631139, lng: 77.222053};
+          var map = new google.maps.Map(document.getElementById('map'), {
+            zoom: 10,
+            center: uluru });
+          var marker = new google.maps.Marker({
+            position: uluru,
+            map: map });
+        }
+      </script>
+      <script async defer
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAPj_0bUjNC-TxCe4yG7NoZp2mm6Z3eD2c&callback=initMap">
+      </script>
+
+<script src="assets/js/bootstrap.js"></script>
 </body>
 </html>
